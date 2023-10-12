@@ -29,37 +29,151 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <nav class="navbar bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Thai Ha Nguyen</a>
-        <ul class="nav justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"
-              ><span class="nav-number">01. </span>Home</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="about.html"
-              ><span class="nav-number">02. </span>About</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"
-              ><span class="nav-number">03. </span>Project</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"
-              ><span class="nav-number">04. </span>Contact</a
-            >
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img src="icons/logo.svg"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <img src="icons/menu-button.svg" />
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                ><span class="nav-number">01. </span>Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"
+                ><span class="nav-number">02. </span>Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"
+                ><span class="nav-number">03. </span>About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html#contact"
+                ><span class="nav-number">04. </span>Contact</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <div class="hero">
-      <h3>Hi, my name is</h3>
-      <h1 class="name-big">Thai Ha Nguyen</h1>
-      <h1>Front-end developer and designer</h1>
+      <div class="container">
+        <h4>Hi, my name is</h4>
+        <h1 class="name">Thai Ha Nguyen</h1>
+        <h1>I build things for a web.</h1>
+        <h2 class="mt-2">
+          I’m a Front-end developer and a UX/ UI designer passionate in building
+          accessible, human-centred products.
+        </h2>
+      </div>
+    </div>
+    <div class="projects-section">
+      <div class="container">
+        <h2><span class="nav-number">02. </span>Featured Projects</h2>
+        <div class="row mt-4">
+          <div class="col-sm-6">
+            <img
+              src="images/yoga.png"
+              class="img-fluid rounded mb-1"
+              alt="yoga app project"
+            />
+          </div>
+          <div class="col-sm-6 text-sm-start">
+            <h4 class="mb-2 mt-3">Project 01</h4>
+            <h2 class="mb-3">Yoga app</h2>
+            <p class="mt-3 text-muted">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis quia, dignissimos nam ratione veniam quibusdam porro
+              omnis quam vel eos eveniet alias temporibus deserunt veritatis
+              minima fugiat explicabo eum dolore.
+            </p>
+            <div class="project-links">
+              <a href="#" alt="github link" target="_blank"
+                ><img src="icons/github-link.svg"
+              /></a>
+              <a href="#" alt="external link" target="_blank"
+                ><img src="icons/external-link.svg"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-sm-6 d-sm-none">
+            <img
+              src="images/weather.png"
+              class="img-fluid rounded mb-1"
+              alt="weather app project"
+            />
+          </div>
+          <div class="col-sm-6 text-sm-end">
+            <h4 class="mb-2 mt-3">Project 02</h4>
+            <h2>Weather app</h2>
+            <p class="mt-3 text-muted">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis quia, dignissimos nam ratione veniam quibusdam porro
+              omnis quam vel eos eveniet alias temporibus deserunt veritatis
+              minima fugiat explicabo eum dolore.
+            </p>
+            <div class="project-links">
+              <a href="#" alt="github link" target="_blank"
+                ><img src="icons/github-link.svg"
+              /></a>
+              <a href="#" alt="external link" target="_blank"
+                ><img src="icons/external-link.svg"
+              /></a>
+            </div>
+          </div>
+          <div class="col-sm-6 d-none d-sm-block">
+            <img
+              src="images/weather.png"
+              class="img-fluid rounded mb-1"
+              alt="weather app project"
+            />
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-sm-6">
+            <img
+              src="images/yogurt.png"
+              class="img-fluid rounded mb-1"
+              alt="yogurt app project"
+            />
+          </div>
+          <div class="col-sm-6">
+            <h4 class="mb-2 mt-3">Project 03</h4>
+            <h2 class="mb-3 text-sm-start">Yogurt app</h2>
+            <p class="mt-3 text-sm-start text-muted">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis quia, dignissimos nam ratione veniam quibusdam porro
+              omnis quam vel eos eveniet alias temporibus deserunt veritatis
+              minima fugiat explicabo eum dolore.
+            </p>
+            <div class="project-links">
+              <a href="#" alt="github link" target="_blank"
+                ><img src="icons/github-link.svg"
+              /></a>
+              <a href="#" alt="external link" target="_blank"
+                ><img src="icons/external-link.svg"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

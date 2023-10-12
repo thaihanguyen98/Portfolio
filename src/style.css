@@ -1,101 +1,146 @@
 :root {
-  --heading-font-family: "Roboto Mono", monospace;
-  --default-font-family: system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
-  --primary-color: #0a1930;
-  --secondary-color: #64ffda;
-  --tertiary-color: #ccd7f5;
+  --heading-font-family: "SF Mono", "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --default-font-family: "Inter";
+  --primary-color: #64ffda;
+  --secondary-color: #ccd7f5;
+  --tertiary-color: #a8b2d1;
+  --accent-color: #112240;
   --default-color: #8892b0;
+  --background-color: #0a192e;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 body {
-  background-color: var(--primary-color);
-  color: var(--default-color);
+  width: 100%;
+  background-color: var(--background-color);
   font-family: var(--default-font-family);
+  color: var(--default-color);
 }
 
 h1,
 h2,
 h3 {
   margin: 0;
-  line-height: 1.1;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+h4 {
+  font-size: 16px;
+  font-family: var(--heading-font-family);
+  color: var(--primary-color);
+  font-weight: 400;
+}
+
+p {
+  font-size: 16px;
+  color: var(--tertiary-color);
 }
 
 .hero {
-  margin: 40px 60px;
+  padding: 160px 20px;
 }
 
-.hero h1 {
-  font-weight: 600;
+.hero h2 {
+  width: 550px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--default-color);
 }
 
-.name-big {
-  color: var(--tertiary-color);
+.name {
+  color: var(--secondary-color);
+}
+
+.hero h3 {
+  font-size: 16px;
+}
+
+nav {
+  background-color: var(--background-color);
 }
 
 .nav-link {
   color: var(--default-color);
   font-family: var(--heading-font-family);
-  font-size: 12px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 30px;
 }
 
-.nav-link:hover {
-  color: var(--secondary-color);
-}
-
-.nav-link:active {
-  color: var(--secondary-color);
+nav a:hover,
+nav a.active {
+  color: var(--primary-color);
 }
 
 .nav-number {
-  color: var(--secondary-color);
-}
-
-h1 {
-  font-size: 80px;
-  color: #8892b0;
-}
-
-h2 {
-  font-size: 48px;
-}
-
-.hero h3 {
-  font-size: 24px;
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-family: var(--heading-font-family);
+  font-weight: 400;
 }
 
-p {
-  font-size: 18px;
-  line-height: 1.5;
+.project-links {
+  margin-left: -10px;
 }
 
-.primary-link {
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
+.projects-section {
+  padding-bottom: 40px;
 }
 
-.secondary-link {
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
+footer {
+  padding: 170px 420px 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer a {
   color: var(--primary-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+.button a {
+  padding: 21px 29px;
+  border-radius: 4px;
   border: 1px solid var(--primary-color);
-}
-
-.homepage-link {
   color: var(--primary-color);
-  text-align: center;
-  display: block;
+  font-family: var(--heading-font-family);
+  text-decoration: none;
+  cursor: pointer;
+}
+.button a:hover {
+  text-decoration: none;
+  transition: var(--transition);
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0.5em 0.5em -0.4em var(--primary-color);
+  transform: translateY(-0.25em);
+  box-shadow: 0.3em 0.3em 0 0 var(--primary-color),
+    inset 0.3em 0.3em 0 0 var(--primary-color);
 }
 
 /* tablet users */
@@ -104,16 +149,29 @@ p {
     max-width: 90%;
   }
 
+  .hero {
+    padding: 100px 0px 40px 10px;
+  }
+
+  .hero h2 {
+    font-size: 18px;
+    max-width: 90%;
+  }
+
   h1 {
-    font-size: 48px;
+    font-size: 36px;
   }
 
   h2 {
-    font-size: 32px;
+    font-size: 24px;
   }
 
   h3 {
-    font-size: 24px;
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 14px;
   }
 
   p {
@@ -123,6 +181,23 @@ p {
   a {
     font-size: 18px;
   }
+
+  .hero h2 {
+    line-height: 26px;
+    width: 450px;
+    font-size: 18px;
+  }
+
+  footer {
+    max-width: 100px;
+    padding: 5px 5px;
+    padding-bottom: 60px;
+  }
 }
 
 /* mobile users */
+@media (max-width: 500px) {
+  .hero {
+    height: fit-content;
+  }
+}
