@@ -116,35 +116,17 @@ a {
 }
 .project-tech-list {
   display: flex;
-  gap: 12px;
+  gap: 5px;
   flex-wrap: wrap;
   margin-left: -40px;
 }
 
 .project-tech-list li {
-  padding: 6px 10px;
-  border-radius: 4px;
-  color: var(--secondary-color);
+  padding: 5px 5px;
 }
 
 .projects-section {
   padding-bottom: 40px;
-}
-
-footer {
-  padding: 170px 420px 100px;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-footer a {
-  color: var(--primary-color);
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-  color: var(--primary-color);
 }
 
 .button a {
@@ -170,15 +152,14 @@ footer a:hover {
   box-sizing: border-box;
 }
 
+/* nav section */
 .nav {
-  height: 50px;
-  width: 100%;
   background-color: var(--background-color);
-  position: relative;
   color: var(--default-color);
   font-family: var(--heading-font-family);
   font-style: normal;
   font-weight: 400;
+  padding: 15px 0;
 }
 
 .nav > .nav-header {
@@ -189,8 +170,6 @@ footer a:hover {
   display: inline-block;
   font-size: 22px;
   color: #fff;
-  padding: 20px 20px 20px 20px;
-  margin-left: 20px;
 }
 
 .nav > .nav-btn {
@@ -208,14 +187,33 @@ footer a:hover {
   padding: 25px 10px 13px 13px;
   text-decoration: none;
   color: var(--secondary-color);
+  transition: all 100ms ease-in-out;
 }
 
-.nav > .nav-links > a:hover {
+.nav > .nav-links > a:hover,
+.nav a.active {
   color: var(--primary-color);
 }
 
 .nav > #nav-check {
   display: none;
+}
+
+/* footer section */
+footer {
+  padding: 170px 420px 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
 }
 
 /* tablet users */
