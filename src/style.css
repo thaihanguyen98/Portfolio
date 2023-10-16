@@ -65,6 +65,7 @@ li {
 
 a {
   text-decoration: none;
+  font-size: 12px;
 }
 .hero {
   padding: 160px 20px;
@@ -128,7 +129,26 @@ a {
 .projects-section {
   padding-bottom: 40px;
 }
+.content-container {
+  padding: 160px 20px;
+}
 
+.content-container img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 2px solid var(--primary-color);
+}
+
+.content {
+  margin: 30px;
+}
+
+.content h3 {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
 /* nav section */
 .nav {
   background-color: var(--background-color);
@@ -178,7 +198,6 @@ a {
 
 /* footer section */
 footer {
-  padding: 20px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -256,7 +275,7 @@ footer a:hover {
   }
 
   a {
-    font-size: 18px;
+    font-size: 12px;
   }
 
   .hero h2 {
